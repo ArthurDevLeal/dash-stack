@@ -16,6 +16,7 @@ export default function Dashboard() {
   return (
     <div className="flex flex-col gap-[30px]">
       <Tittle name="Dashboard" />
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
         {cardData.map((card, index) => (
           <Card key={index} {...card} />

@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
-export function TableRoot({ children }: { children: ReactNode }) {
+export function TableRoot({ children }: { children: JSX.Element | JSX.Element[] }) {
   return <table className="min-w-full ">{children}</table>;
 }

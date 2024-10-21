@@ -10,12 +10,14 @@ interface SideBarItemRootProps {
 export default function SideBarItem({ name, icon, isActive = false, href }: SideBarItemRootProps) {
   return (
     <Link href={href}>
-      <SideBarIndex.Item.Root
-        className={isActive ? "bg-babyblue active-indicator " : "bg-white hover:bg-bgdashboard "}
+      <div
+        className={`w-[192px] h-[50px] flex pl-[20px] items-center gap-4 rounded-md transition-all relative ${
+          isActive ? "bg-babyblue active-indicator " : "bg-white hover:bg-bgdashboard "
+        }`}
       >
         <SideBarIndex.Item.Icon Icon={icon} className={isActive ? "text-white" : "text-diferentblack"} />
-        <SideBarIndex.Item.Name name={name} className={isActive ? "text-white" : "text-diferentblack"} />
-      </SideBarIndex.Item.Root>
+        <p className={isActive ? "text-white" : "text-diferentblack"}>{name}</p>
+      </div>
     </Link>
   );
 }

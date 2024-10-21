@@ -12,8 +12,8 @@ export default function Card({ name, data, percentageNumber, percentageText }: C
     <CardIndex.Root>
       <div className="flex justify-between">
         <div className="flex flex-col gap-4">
-          <CardIndex.Name name={name} />
-          <CardIndex.Data data={data} />
+          <h2 className="font-semibold text-diferentblack opacity-70">{name}</h2>
+          <p className="text-[28px] font-bold text-diferentblack">{data}</p>
         </div>
         <CardIndex.Icon />
       </div>
