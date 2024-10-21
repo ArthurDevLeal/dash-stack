@@ -49,7 +49,7 @@ export default function SideBar() {
       <SideBarItem name="Pricing" icon={Gift} isActive={path === "/pricing"} href="/pricing" />
       <SideBarItem name="Calendar" icon={CalendarRange} isActive={path === "/calendar"} href="/calendar" />
       <SideBarItem name="To-Do" icon={ListTodoIcon} isActive={path === "/to-do"} href="/to-do" />
-      <SideBarItem name="Contact" icon={UsersIcon} isActive={path === "/contact"} href="/contact" />
+      <SideBarItem name="Contact" icon={UsersIcon} isActive={path === "/contact" || path === "/contact/addNew"} href="/contact" />
       <SideBarItem name="Invoice" icon={CircleDollarSign} isActive={path === "/invoice"} href="/invoice" />
       <SideBarItem
         name="Ui Elements Stock"

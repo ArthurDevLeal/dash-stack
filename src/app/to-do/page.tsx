@@ -1,5 +1,5 @@
 "use client";
-import { useTodo } from "@/stores/useTodo";
+import { useTodo } from "@/stores/use-todo";
 import { Tittle } from "../components/ui/tittle";
 import Item from "./components/item/item";
 import { ToDoAddButton } from "./components/to-do-add";
