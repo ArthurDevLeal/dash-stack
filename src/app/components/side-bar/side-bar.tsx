@@ -57,7 +57,7 @@ export default function SideBar() {
         isActive={path === "/ui elements stock"}
         href="/ui-elements-stock"
       />
-      <SideBarItem name="Team" icon={User} isActive={path === "/team"} href="" />
+      <SideBarItem name="Team" icon={User} isActive={path === "/team" || path === "/team/newTeam"} href="/team" />
       <SideBarItem name="Table" icon={Table} isActive={path === "/table"} href="" />
 
       <SideBarIndex.Division />
